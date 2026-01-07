@@ -11,6 +11,14 @@ api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     api_key = os.environ.get("GEMINI_API_KEY")
 
+if not api_key:
+    # Try Streamlit Secrets (Cloud Deployment)
+    try:
+        import streamlit as st
+        api_key = st.secrets["GEMINI_API_KEY"]
+    except:
+        pass
+
 if api_key:
     genai.configure(api_key=api_key)
 
