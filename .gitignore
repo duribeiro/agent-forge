@@ -12,3 +12,6 @@ venv/
 *.mp4
 *.zip
 temp_video.mp4
+
+# Local Utility Scripts
+video_extractor.py
