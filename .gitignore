@@ -1,0 +1,14 @@
+# Security
+.env
+
+# System
+__pycache__/
+*.pyc
+
+# Virtual Env
+venv/
+
+# Temp Files
+*.mp4
+*.zip
+temp_video.mp4
